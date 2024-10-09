@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prayer Timer</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="/node_modules/axios/dist/axios.min.js"></script>
+</head>
+<body>
+    
+    <!-- Main content  -->
+    <div class="container">
+        <div class="lang">
+            <a href="main.html">Arabic</a>
+        </div>
+        <div class="title">
+            <h1>Prayer Times in Lebanon</h1>
+        </div>
+        <div id="CityTitle">
+            <h1 id="cityName"></h1>
+        </div>
+        <div class="flex">
+        <div id="Date">
+            <h1 id="date"></h1>
+        </div>
+            <div id="City">
+                <h3> City:</h3>
+                <select name="city" id="city">
+                   
+                </select>
+            </div>
+            <button onclick="getTime()" id="click">Click</button>
+        </div>
+        <hr>
+        <div class="content">
+            <div class="card">
+                <div id="fajr">
+                    <h1 >Fajer</h1><hr>
+                    <h2 id="fajrTime"></h2>
+                </div>
+            </div>
+            <div class="card">
+                <div id="duhor">
+                    <h1 >Duhor</h1> <hr>
+                    <h2 id="duhorTime"></h2>
+                </div>
+            </div>
+            <div class="card">
+                <div id="aser">
+                    <h1>Aser</h1> <hr>
+                    <h2 id="aserTime"></h2>
+                </div>
+            </div>
+            <div class="card">
+                <div id="magrib">
+                    <h1>Magrib</h1> <hr>
+                    <h2 id="magribTime"></h2>
+                </div>
+            </div>
+            <div class="card">
+                <div id="isha">
+                    <h1>Isha</h1> <hr>
+                    <h2 id="ishaTime"></h2>
+                </div>
+            </div>
+       
+          
+        </div>
+
+    </div>
+</body>
+
+<script src="index.js"></script>
+</html>

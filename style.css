@@ -1,0 +1,202 @@
+*{
+    padding: 0;
+    margin:0;
+}
+body{
+    width:100%;
+    background-color: rgba(0, 64, 137, 1);
+    color:white;
+    overflow-x: hidden;
+    font-family: Arial, sans-serif; /* Added a default font */
+    line-height: 1.6;
+}
+.container{
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto; /* Center the container */
+    padding: 20px;
+}
+
+.title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0;
+}
+.title h1{
+    font-size: 2.5rem; /* Responsive font size */
+    text-align: center;
+}
+#CityTitle{
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+}
+#CityTitle h1{
+    font-size: 3.5rem; /* Responsive font size */
+    margin-bottom: 10px;
+}
+#Date{
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    padding: 8px 0;
+
+}
+#date{
+    font-size: 1.8rem;
+}
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 80%;
+    padding: 10px 0;
+    gap: 20px;
+}
+#City{
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    display: flex;
+    gap:10px;
+}
+
+#city{
+    padding:6px;
+    border:none;
+    font-size: 18px;
+}
+#City h3{
+    font-size: 1.5rem;
+}
+.content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 20px 0;
+    gap: 20px;
+    margin-top: 22px;
+}
+
+.card{
+    width: 100%;
+    max-width: 250px;
+    background-color: rgba(91, 120, 152, 1);
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+.card:hover {
+    transform: translateY(-5px);
+}
+.card h1{
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+.card h2{
+    margin-top: 20px;
+    font-size: 1.8rem;
+}
+
+#click{
+    padding: 12px 20px;
+    border: none;
+    border-radius: 10px;
+    background: #fff;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background 0.3s, color 0.3s;
+}
+#click:hover {
+    background: #f0f0f0;
+}
+.lang{
+    width:50px;
+    background-color: #fff;
+    padding: 8px;
+}
+.lang a{
+    text-decoration: none;
+    color:black;
+
+}
+@media (max-width: 767px) {
+    .title h1 {
+        font-size: 2rem;
+    }
+
+    #CityTitle h1 {
+        font-size: 2.5rem;
+    }
+
+    #date {
+        font-size: 1.5rem;
+    }
+
+    #City h3 {
+        font-size: 1.2rem;
+    }
+
+    #click {
+        padding: 10px 16px;
+        font-size: 0.9rem;
+    }
+
+    .card {
+        max-width: 45%;
+        padding: 15px;
+    }
+
+    .card h1 {
+        font-size: 1.3rem;
+    }
+
+    .card h2 {
+        font-size: 1.5rem;
+    }
+
+    .lang {
+        max-width: 50px;
+        padding: 6px;
+    }
+}
+
+/* Small Mobile Devices */
+@media (max-width: 480px) {
+    .card {
+        max-width: 100%;
+    }
+
+    .flex {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    #City {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .lang {
+        width: 100%;
+        max-width: none;
+    }
+
+    #CityTitle h1 {
+        font-size: 2rem;
+    }
+
+    #Date, #City, #click {
+        text-align: center;
+    }
+}

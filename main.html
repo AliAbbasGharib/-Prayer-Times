@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مواقيت الصلاة</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="/node_modules/axios/dist/axios.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="lang">
+            <a href="index.html">English</a>
+        </div>
+        <div class="title">
+            <h1>مواقيت الصلاة في لبنان</h1>
+        </div>
+        <div id="CityTitle">
+            <h1 id="cityName"></h1>
+        </div>
+        <div class="flex">
+        <div id="Date">
+            <h1 id="date"></h1>
+        </div>
+            <div id="City">
+                <h3> المدينة:</h3>
+                <select name="city" id="city">
+                   
+                </select>
+            </div>
+            <button onclick="getTime()" id="click">اضغط هنا</button>
+        </div>
+        <hr>
+        <div class="content">
+            <div class="card">
+                <div id="fajr">
+                    <h1 >الصبح</h1> <hr>
+                    <h2 id="fajrTime"></h2>
+                </div>
+            </div>
+            <div class="card">
+                <div id="duhor">
+                    <h1 >الظهر</h1> <hr>
+                    <h2 id="duhorTime"></h2>
+                </div>
+            </div>
+            <div class="card">
+                <div id="aser">
+                    <h1>العصر</h1> <hr>
+                    <h2 id="aserTime"></h2>
+                </div>
+            </div>
+            <div class="card">
+                <div id="magrib">
+                    <h1>المغرب</h1> <hr>
+                    <h2 id="magribTime"></h2>
+                </div>
+            </div>
+            <div class="card">
+                <div id="isha">
+                    <h1>العشاء</h1> <hr>
+                    <h2 id="ishaTime"></h2>
+                </div>
+            </div>
+       
+          
+        </div>
+
+    </div>
+</body>
+
+<script src="main.js"></script>
+</html>
