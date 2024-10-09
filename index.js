@@ -3,7 +3,7 @@ let click = document.createElement("click");
  function getDate()
 {
 
-    axios.get("http://api.aladhan.com/v1/timingsByCity/{date}?city=${city}&country=Lebanon&method=0")
+    axios.get("https://api.aladhan.com/v1/timingsByCity/{date}?city=${city}&country=Lebanon&method=0")
     .then((response) => {
         let weekday = response.data.data.date.gregorian.weekday.en;
         let date = response.data.data.date.gregorian.date;
@@ -29,7 +29,7 @@ for(let city of cities)
 function getTime()
 {
     let city = document.getElementById("city").value;
-    axios.get(`http://api.aladhan.com/v1/timingsByCity/{date}?city=${city}&country=Lebanon&method=0`)
+    axios.get(`https://api.aladhan.com/v1/timingsByCity/{date}?city=${city}&country=Lebanon&method=0`)
     .then((response) => {
        
         let times = response.data.data.timings;
