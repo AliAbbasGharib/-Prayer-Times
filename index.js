@@ -13,7 +13,7 @@ let click = document.createElement("click");
 }
 getDate();
 
-let cities = ["Beirut","Saida","Tyre","Marjaayoun","Baalbek","Nabatieh"];
+let cities = ["Beirut","Sidon","Tyre","Marjaayoun","Baalbek","Nabatieh"];
 
 for(let city of cities)
 {
